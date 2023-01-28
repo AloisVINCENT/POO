@@ -25,7 +25,7 @@ public class exercice3 {
                 j = 1;
                 m++;
             // Cas de fevrier non-bisextile
-            } else if (m == 2 && j == 28) {
+            } else if (m == 2 && j == 28 && !(a % 4 == 0 && a % 400 != 0)) {
                 j = 1;
                 m++;
             // Cas de la fin d'annee
