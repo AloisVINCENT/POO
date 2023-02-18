@@ -28,6 +28,7 @@ public class UtilTab {
                 tab[i] = s;
             }
         }
+        sc.close();
         return tab;
     }
 
