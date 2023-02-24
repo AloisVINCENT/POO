@@ -1,5 +1,6 @@
 package TD_3;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class td3 {
@@ -116,15 +117,25 @@ public class td3 {
             findCompte(c, CIN).addSolde(s);
         }
 
-        public static void main(String[] args) {
+        public void main() {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Entrez le nombre de client :");
+            System.out.println("Entrez le nombre de clients :");
             int n = sc.nextInt();
-            Client[] c = new Client[n];
+            Client[] cl = new Client[n];
             for (int i = 0; i < n; i++) {
-                c[i] = Main.setUpClient();
+                cl[i] = setUpClient();
             }
-        }
+            System.out.println("Entrez le nombre de comptes :");
+            n = sc.nextInt();
+            Compte[] co = new Compte[n];
+            for (int i = 0; i < n; i++) {
+                co[i] = setUpCompte(cl[i], 0);
+            }
+            for (int i = 0; i < n; i++) {
+                System.out.println("Entrez le CIN :");
+                int cin = sc.nextInt();
+                co[i] = Compte()
+            }
 
     }
 }
