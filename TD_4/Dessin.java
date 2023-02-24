@@ -28,7 +28,12 @@ public class Dessin {
         }
     }
 
-    
+    public int surface(){
+        if (tab.length == 0) {
+            return 0;  
+        }
+        //demander à Erwann
+    }
 
 
 }
